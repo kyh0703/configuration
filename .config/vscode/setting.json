@@ -1,0 +1,148 @@
+  // Vim Extension setting
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.hlsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.startInInsertMode": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<ESC>"
+      ]
+    },
+    {
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<ESC>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ],
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "Z",
+        "Z"
+      ],
+      "commands": [
+        ":wq"
+      ]
+    },
+    {
+      "before": [
+        "Z",
+        "Q"
+      ],
+      "commands": [
+        ":q!"
+      ]
+    },
+    {
+      "before": [
+        "p",
+      ],
+      "after": [
+        "p",
+        "g",
+        "v",
+        "y"
+      ]
+    },
+    // select all
+    {
+      "before": [
+        "<C-a>"
+      ],
+      "after": [
+        "gg<S-v>G"
+      ]
+    },
+    // increment/decrement
+    {
+      "before": [
+        "+"
+      ],
+      "after": [
+        "<C-a>"
+      ]
+    },
+    {
+      "before": [
+        "-"
+      ],
+      "after": [
+        "<C-x>"
+      ]
+    },
+    // new tab
+    {
+      "before": [
+        "t",
+        "e"
+      ],
+      "commands": [
+        ":tabedit"
+      ]
+    },
+    // split window
+    {
+      "before": [
+        "s",
+        "s"
+      ],
+      "commands": [
+        ":split<Return><C-w>w"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "v"
+      ],
+      "commands": [
+        ":vsplit<Return><C-w>w"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": true,
+    "<C-j>": false,
+    "<C-c>": false,
+    "<C-w>": true,
+    "<C-p>": false,
+    "<C-n>": true,
+  },
+  "vim.gdefault": true,
+  "vim.foldfix": true,
+  "vim.autoSwitchInputMethod.defaultIM": "1033",
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\im-select\\im-select.exe",
+  "vim.autoSwitchInputMethod.switchIMCmd": "C:\\im-select\\im-select.exe",
+  "vim.statusBarColors.insert": "#333",
+  "vim.statusBarColors.normal": "#282922",
