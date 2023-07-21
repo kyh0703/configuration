@@ -27,6 +27,23 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
+        "g",
+        "r",
+      ],
+      "commands": [
+        "editor.action.goToReferences",
+      ]
+    },
+      "before": [
+        "g",
+        "i",
+      ],
+      "commands": [
+        "editor.action.goToImplementation",
+      ]
+    },
+    {
+      "before": [
         "<leader>",
         "d"
       ],
