@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 -- dracula pro
+vim.cmd("set packpath+=~/.config/nvim")
 vim.cmd("packadd! dracula_pro")
 vim.cmd("syntax enable")
 vim.cmd("let g:dracula_colorterm = 1")
