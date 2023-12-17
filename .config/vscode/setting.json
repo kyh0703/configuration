@@ -1,5 +1,4 @@
-// Vim Extension setting
-{
+  // Vim Extension setting
   "vim.easymotion": true,
   "vim.sneak": true,
   "vim.hlsearch": true,
@@ -7,120 +6,260 @@
   "vim.startInInsertMode": false,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "k"],
-      "after": ["<ESC>"]
-    }
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<ESC>"
+      ]
+    },
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "z"],
-      "commands": ["workbench.action.toggleZenMode"]
+      "before": [
+        "<leader>",
+        "z"
+      ],
+      "commands": [
+        "workbench.action.toggleZenMode"
+      ]
     },
     {
-      "before": ["<leader>", "i"],
-      "commands": ["interactiveEditor.start"]
+      "before": [
+        "<leader>",
+        "i"
+      ],
+      "commands": [
+        "interactiveEditor.start"
+      ]
     },
     {
-      "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"]
+      "before": [
+        "g",
+        "r",
+      ],
+      "commands": [
+        "editor.action.goToReferences",
+      ]
     },
     {
-      "before": ["g", "i"],
-      "commands": ["editor.action.goToImplementation"]
+      "before": [
+        "g",
+        "i",
+      ],
+      "commands": [
+        "editor.action.goToImplementation",
+      ]
     },
     {
-      "before": ["<leader>", "e"],
-      "commands": ["nerdtree.unfocusSidebarOrClose"]
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "nerdtree.unfocusSidebarOrClose",
+      ]
     },
     {
-      "before": ["<leader>", "g"],
-      "after": ["G"]
+      "before": [
+        "<leader>",
+        "g"
+      ],
+      "after": [
+        "G",
+      ],
     },
     // front, tail
     {
-      "before": ["<leader>", "f"],
-      "after": ["^"]
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "after": [
+        "^"
+      ]
     },
     {
-      "before": ["<leader>", "t"],
-      "after": ["$"]
+      "before": [
+        "<leader>",
+        "t"
+      ],
+      "after": [
+        "$"
+      ]
     },
     // Add 10+ line
     {
-      "before": ["<leader>", "j"],
-      "after": ["1", "0", "j"]
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "after": [
+        "1",
+        "0",
+        "j",
+      ]
     },
     {
-      "before": ["<leader>", "k"],
-      "after": ["1", "0", "k"]
+      "before": [
+        "<leader>",
+        "k"
+      ],
+      "after": [
+        "1",
+        "0",
+        "k"
+      ]
     },
     {
-      "before": ["<leader>", "h"],
-      "after": ["1", "0", "h"]
+      "before": [
+        "<leader>",
+        "h"
+      ],
+      "after": [
+        "1",
+        "0",
+        "h"
+      ]
     },
     {
-      "before": ["<leader>", "l"],
-      "after": ["1", "0", "l"]
+      "before": [
+        "<leader>",
+        "l"
+      ],
+      "after": [
+        "1",
+        "0",
+        "l"
+      ]
     },
     {
-      "before": ["Z", "Z"],
-      "commands": [":wq"]
+      "before": [
+        "Z",
+        "Z"
+      ],
+      "commands": [
+        ":wq"
+      ]
     },
     {
-      "before": ["Z", "S"],
-      "commands": [":wqa!"]
+      "before": [
+        "Z",
+        "S"
+      ],
+      "commands": [
+        ":wqa!"
+      ]
     },
     {
-      "before": ["Z", "Q"],
-      "commands": [":q!"]
+      "before": [
+        "Z",
+        "Q"
+      ],
+      "commands": [
+        ":q!"
+      ]
     },
     {
-      "before": ["Z", "D"],
-      "commands": [":qa!"]
+      "before": [
+        "Z",
+        "D"
+      ],
+      "commands": [
+        ":qa!"
+      ]
+    },
+    // tab controle
+    {
+      "before": [
+        "t",
+        "e",
+      ],
+      "commands": [
+        ":tabedit",
+      ]
+    },
+    {
+      "before": [
+        "<tab>",
+      ],
+      "commands": [
+        ":tabnext",
+      ]
+    },
+    {
+      "before": [
+        "<s-tab>",
+      ],
+      "commands": [
+        ":tabprev",
+      ]
     },
     // select all
     {
-      "before": ["<C-a>"],
-      "after": ["gg<S-v>G"]
+      "before": [
+        "<C-a>"
+      ],
+      "after": [
+        "gg<S-v>G"
+      ]
     },
     // increment/decrement
     {
-      "before": ["+"],
-      "after": ["<C-a>"]
+      "before": [
+        "+"
+      ],
+      "after": [
+        "<C-a>"
+      ]
     },
     {
-      "before": ["-"],
-      "after": ["<C-x>"]
+      "before": [
+        "-"
+      ],
+      "after": [
+        "<C-x>"
+      ]
     },
     // split window
     {
-      "before": ["s", "s"],
-      "commands": [":split<Return><C-w>w"]
+      "before": [
+        "s",
+        "p"
+      ],
+      "commands": [
+        ":split<Return><C-w>w"
+      ]
     },
     {
-      "before": ["s", "v"],
-      "commands": [":vsplit<Return><C-w>w"]
+      "before": [
+        "s",
+        "v"
+      ],
+      "commands": [
+        ":vsplit<Return><C-w>w"
+      ]
+    },
+    // Delete line
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
     },
     {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
     },
-    {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
-    },
-    {
-      "before": ["t", "e"],
-      "commands": [":tabedit"]
-    },
-    {
-      "before": ["<tab>"],
-      "commands": [":tabnext"]
-    },
-    {
-      "before": ["<s-tab>"],
-      "commands": [":tabprev"]
-    }
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": {
@@ -130,7 +269,7 @@
     "<C-c>": false,
     "<C-w>": true,
     "<C-p>": false,
-    "<C-n>": true
+    "<C-n>": true,
   },
   "vim.gdefault": true,
   "vim.foldfix": true,
@@ -143,5 +282,4 @@
   "vim.autoSwitchInputMethod.enable": true,
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
-  }
-}
+  },
